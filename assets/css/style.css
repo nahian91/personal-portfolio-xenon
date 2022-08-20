@@ -114,3 +114,66 @@ body{
   .about-content ul li {
     text-transform: capitalize;
   }
+
+/* Services CSS */
+
+
+.services-area {
+    background-color: #f6f6f6;
+  }
+  .section-title h4 {
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  .section-title h4:before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background-color: #ff3636;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .section-title h4:after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff3636;
+    border-radius: 50%;
+    left: 50%;
+    bottom: -3px;
+    transform: translateX(-50%);
+  }
+  .section-title {
+    margin-bottom: 60px;
+  }
+  .single-service {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #ddd;
+    margin-bottom: 30px;
+  }
+  .single-service i {
+    background-color: #ff3636;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 60px;
+    transition: .3s;
+  }
+  .single-service h4 {
+    text-transform: capitalize;
+    margin: 20px 0 15px;
+    font-size: 26px;
+    font-weight: 500;
+  }
+  .single-service:hover i {
+    border-radius: 50%;
+  }
