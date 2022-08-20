@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* Common CSS */
+
+.pt-100{
+    padding-top: 100px;
+}
+.pb-100{
+    padding-bottom: 100px;
+}
+
+/* Header CSS */
+
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    font-size: 24px;
+    color: #fff;
+}
+.header {
+	padding: 5px 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 9;
+}
+  .navbar-nav li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 12px !important;
+  }
+
+/* Bannar CSS */
+
+
+.bannar-area {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+    height: 100vh;
+  }
+  .bannar-area:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    opacity: .7;
+    z-index: -11;
+  }
+
+  .bannar h1 {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 80px;
+  }
+  .bannar h5 {
+    text-transform: capitalize;
+  }
+  .btn-box {
+    background-color: #ff3636;
+    display: inline-block;
+    color: #fff;
+    text-decoration: navajowhite;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 12px 30px;
+    font-size: 18px;
+    transition: .3s;
+  }
+  .bannar a {
+    margin-top: 15px;
+  }
+  .btn-box:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+/* About CSS */
+
+
+.about-content h3 {
+    color: #ff3636;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 26px;
+  }
+  .about-content h5 {
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  
+.about-content ul {
+    width: 30%;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+  .about-content ul li {
+    text-transform: capitalize;
+  }
