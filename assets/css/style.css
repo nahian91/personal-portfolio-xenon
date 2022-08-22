@@ -126,7 +126,7 @@ body{
     font-size: 40px;
     font-weight: 600;
     position: relative;
-    padding-bottom: 12px;
+    padding-bottom: 20px;
   }
   .section-title h4:before {
     content: "";
@@ -177,3 +177,159 @@ body{
   .single-service:hover i {
     border-radius: 50%;
   }
+
+  /* Projects CSS */
+
+  
+.single-project {
+  position: relative;
+}
+.single-project:hover .project-overlay{
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+.project-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s;
+  transform: scale(0);
+}
+.project-overlay:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  opacity: .8;
+  z-index: -1;
+}
+.project-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.project-content a {
+  color: #fff;
+  border: 1px solid #fff;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  line-height: 40px;
+  margin: 0 5px;
+  transition: .3s;
+}
+.project-content a:hover{
+  background-color: #ff3636;
+  border-color: #ff3636;
+}
+.project-content h4 {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.project-content h4 span {
+  display: block;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 5px;
+  text-transform: lowercase;
+}
+
+/* Breadcumb CSS */
+
+
+.breadcumb-area {
+  padding: 160px 0 80px;
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 2;
+}
+.breadcumb-area:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  left: 0;
+  top: 0;
+  opacity: .8;
+  z-index: -1;
+}
+.breadcumb-area h2 {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+/* Single Project CSS */
+
+
+.page-title {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 24px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.project-contents img {
+  margin-bottom: 25px;
+}
+.project-gallery {
+  margin-top: 40px;
+}
+.sidebar {
+  margin-bottom: 40px;
+}
+.sidebar ul li {
+  padding-left: 0;
+  font-weight: 500;
+}
+.sidebar iframe {
+  width: 100%;
+  height: 300px;
+}
+
+/* Counter CSS */
+
+
+.counter-area {
+  background-color: #333;
+  color: #fff;
+}
+.single-counter {
+  text-align: center;
+}
+.single-counter i {
+  background-color: #ff3636;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 22px;
+}
+.single-counter h4 {
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 45px;
+}
+.single-counter p {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 500;
+}
