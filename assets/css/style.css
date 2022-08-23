@@ -333,3 +333,271 @@ body{
   font-size: 20px;
   font-weight: 500;
 }
+
+/* Timeline CSS */
+
+
+.timeline-list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.timeline-list:after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #ff3636;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+.timeline-list li .timeline-content {
+  width: 45%;
+  border: 2px solid #ff3636;
+  text-align: right;
+  padding: 20px;
+}
+.timeline-list li .timeline-content span {
+  display: block;
+  color: #ff3636;
+  font-weight: 600;
+  font-size: 20px;
+}
+.timeline-list li .timeline-content h4 {
+  text-transform: capitalize;
+  font-size: 26px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.timeline-list li {
+  clear: both;
+  display: table;
+  position: relative;
+}
+.timeline-list li:nth-child(even) .timeline-content {
+  float: right;
+  text-align: left;
+}
+.timeline-list li:after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #ff3636;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Testimonials CSS */
+
+
+.testimonials-area {
+  background-color: #333;
+  color: #fff;
+}
+.single-testimonial {
+  text-align: center;
+}
+.single-testimonial img {
+	border-radius: 50%;
+	width: 120px !important;
+	margin: 0 auto;
+}
+.single-testimonial p {
+  margin-top: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+.client-info h4 {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.client-info h4 span {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.testimonials .owl-dots button {
+  width: 15px;
+  height: 15px;
+  background-color: #fff !important;
+  display: inline-block;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+.testimonials .owl-dots {
+  text-align: center;
+  margin-top: 15px;
+}
+.testimonials .owl-dots button.active {
+  background-color: #ff3636 !important;
+}
+
+/* Price CSS */
+
+
+.price-area {
+  background-color: #f4f4f4;
+}
+.single-price {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px 30px;
+}
+.single-price h5 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+}
+.single-price h2 {
+  margin: 20px 0;
+  background-color: #f4f4f4;
+  padding: 10px;
+  font-size: 40px;
+  font-weight: 700;
+}
+.single-price ul {
+  list-style: none;
+  padding: 0;
+}
+.single-price ul li {
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.single-price ul li:last-child {
+  border-bottom: 0;
+}
+.single-price.active {
+  border: 3px solid #ff3636;
+}
+.single-price.active h2 {
+  background-color: #ff3636;
+  color: #fff;
+}
+
+/* Team CSS */
+
+
+.single-team img {
+  width: 100%;
+}
+.single-team {
+  position: relative;
+  overflow: hidden;
+}
+.team-content {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  position: absolute;
+  left: 0;
+  bottom: -130px;
+  width: 100%;
+  transition: .3s;
+}
+.team-content h4 {
+  text-transform: capitalize;
+  font-size: 26px;
+  font-weight: 600;
+}
+.team-content h4 span {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+.team-content a {
+  color: #fff;
+  margin: 0 5px;
+  transition: .3s;
+}
+.team-content a:hover {
+  color: #ff3636;
+}
+.single-team:hover .team-content {
+  bottom: 0;
+}
+
+/* Blog CSS */
+
+.blog-area {
+  background-color: #f4f4f4;
+}
+.single-blog {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+.blog-img {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+.blog-meta {
+  text-align: center;
+  background-color: #fff;
+  padding: 10px 0;
+  margin: -25px 25px 0;
+  border: 1px solid #ddd;
+}
+.blog-meta a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 5px;
+  transition: .3s;
+}
+.blog-meta a:hover {
+  color: #ff3636;
+}
+.single-blog h4 a {
+  text-transform: capitalize;
+  text-decoration: navajowhite;
+  color: #333;
+  margin: 15px 0;
+  display: block;
+  transition: .3s;
+}
+.single-blog h4 a:hover {
+  color: #ff3636;
+}
+
+/* CTA CSS */
+
+
+.cta-area {
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+.cta-area:before {
+  position: absolute;
+  content: "";
+  background-color: #333;
+  opacity: .8;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.cta-area h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+}
+.cta-area p {
+  margin: 20px 0;
+}
