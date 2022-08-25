@@ -1,0 +1,71 @@
+
+
+@media only screen and (min-width:992px) and (max-width: 1200px) {
+    .single-service {
+        padding: 20px 5px;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width: 992px) {
+    .single-counter h4 {
+        font-size: 35px;
+    }
+    .single-counter p {
+        font-size: 15px;
+    }
+    .timeline-list li .timeline-content {
+        padding: 10px;
+    }
+    .navbar-toggler{
+        background-color: #fff;
+    }    
+    .navbar-collapse {
+        background-color: #fff;
+        padding: 10px;
+        margin-top: 15px;
+    }
+    .navbar-collapse a {
+        color: #333 !important;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-toggler{
+        background-color: #fff;
+        border: 0;
+    }   
+    .bannar h1 {
+        font-size: 40px;
+    }
+    .bannar h5 {
+        margin: 0 10px;
+        line-height: 30px;
+    }
+    .about-content ul {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .about-content ul li {
+        margin-bottom: 7px;
+    }
+    .single-counter {
+        margin-bottom: 50px;
+    }
+    .timeline-list::after, .timeline-list li::after {
+        display: none;
+    }
+    .timeline-list li .timeline-content {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .timeline-list li:nth-child(2n) .timeline-content {
+        float: none;
+        text-align: center;
+    }
+    .single-price, .single-team, .single-blog{
+        margin-bottom: 30px;
+    }
+}

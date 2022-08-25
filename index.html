@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +18,13 @@
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="assets/css/resposnive.css">
 </head>
-<body>
+<body data-bs-spy="scroll">
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <img src="assets/img/preloader.gif" alt="">
+    </div>
+
     <!-- Header Start Here -->
     <header class="header">
         <div class="container">
@@ -26,35 +32,35 @@
                 <div class="col-xxl-12">
                     <nav class="navbar navbar-expand-lg">
                         <div class="container-fluid">
-                          <a class="navbar-brand" href="#">xenon</a>
+                          <a class="navbar-brand" href="#" id="home">xenon</a>
                           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Home</a>
+                                    <a class="nav-link active" href="#home">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
+                                    <a class="nav-link" href="#about">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Services</a>
+                                    <a class="nav-link" href="#services">Services</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Projects</a>
+                                    <a class="nav-link" href="#projects">Projects</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Experience</a>
+                                    <a class="nav-link" href="#experience">Experience</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Testimonials</a>
+                                    <a class="nav-link" href="#testimonials">Testimonials</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Blog</a>
+                                    <a class="nav-link" href="#blog">Blog</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
+                                    <a class="nav-link" href="#contact">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -71,7 +77,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xxl-12 text-center">
-                    <div class="bannar position-absolute top-50 start-50 translate-middle text-white">
+                    <div class="bannar w-100 position-absolute top-50 start-50 translate-middle text-white">
                         <h1>I Am xenon doe</h1>
                         <h5>developer - freelancer - photographer </h5>
                         <a href="" class="btn-box">contact me</a>
@@ -83,15 +89,15 @@
     <!-- Bannar End Here -->
 
     <!-- About Start Here -->
-    <section class="about-area pt-100 pb-100">
+    <section class="about-area pt-100 pb-100" id="about">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-xxl-3">
+                <div class="col-xl-3 col-lg-4 col-md-12 text-md-center mb-md-5 mb-lg-0">
                     <div class="about-img">
                         <img class="img-fluid" src="assets/img/me.png" alt="">
                     </div>
                 </div>
-                <div class="col-xxl-9">
+                <div class="col-xl-9 col-lg-8">
                     <div class="about-content">
                         <h3>xenon doe</h3>
                         <h5>professional web developer</h5>
@@ -118,7 +124,7 @@
     <!-- About End Here -->
 
     <!-- Services Start Here -->
-    <section class="services-area pt-100 pb-100">
+    <section class="services-area pt-100 pb-100" id="services">
         <div class="container">
             <div class="row">
                 <div class="col-xxl-12 text-center">
@@ -129,42 +135,42 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xxl-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="single-service">
                         <i class="fa-brands fa-dribbble"></i>
                         <h4>design</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat fugit quas veniam perferendis repudiandae sequi. </p>
                     </div>
                 </div>
-                <div class="col-xxl-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="single-service">
                         <i class="fa-solid fa-code"></i>
                         <h4>development</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat fugit quas veniam perferendis repudiandae sequi. </p>
                     </div>
                 </div>
-                <div class="col-xxl-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="single-service">
                         <i class="fa-solid fa-clone"></i>
                         <h4>branding</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat fugit quas veniam perferendis repudiandae sequi. </p>
                     </div>
                 </div>
-                <div class="col-xxl-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="single-service">
                         <i class="fa-solid fa-rocket"></i>
                         <h4>databse</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat fugit quas veniam perferendis repudiandae sequi. </p>
                     </div>
                 </div>
-                <div class="col-xxl-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="single-service">
                         <i class="fa-solid fa-mobile"></i>
                         <h4>app</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat fugit quas veniam perferendis repudiandae sequi. </p>
                     </div>
                 </div>
-                <div class="col-xxl-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="single-service">
                         <i class="fa-solid fa-clock"></i>
                         <h4>support</h4>
@@ -177,7 +183,7 @@
     <!-- Services End Here -->
 
     <!-- Projects Area Start -->
-    <section class="projects-area pt-100 pb-100">
+    <section class="projects-area pt-100 pb-100" id="projects">
         <div class="container">
             <div class="row">
                 <div class="col-xxl-12 text-center">
@@ -188,7 +194,7 @@
                 </div>
             </div>
             <div class="row g-0">
-                <div class="col-xxl-4">
+                <div class="col-md-4">
                     <div class="single-project">
                         <img class="img-fluid" src="assets/img/projects/1.jpg" alt="">
                         <div class="project-overlay">
@@ -200,7 +206,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xxl-4">
+                <div class="col-md-4">
                     <div class="single-project">
                         <img class="img-fluid" src="assets/img/projects/2.jpg" alt="">
                         <div class="project-overlay">
@@ -212,7 +218,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xxl-4">
+                <div class="col-md-4">
                     <div class="single-project">
                         <img class="img-fluid" src="assets/img/projects/3.jpg" alt="">
                         <div class="project-overlay">
@@ -224,7 +230,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xxl-4">
+                <div class="col-md-4">
                     <div class="single-project">
                         <img class="img-fluid" src="assets/img/projects/4.jpg" alt="">
                         <div class="project-overlay">
@@ -236,7 +242,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xxl-4">
+                <div class="col-md-4">
                     <div class="single-project">
                         <img class="img-fluid" src="assets/img/projects/5.jpg" alt="">
                         <div class="project-overlay">
@@ -248,7 +254,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xxl-4">
+                <div class="col-md-4">
                     <div class="single-project">
                         <img class="img-fluid" src="assets/img/projects/6.jpg" alt="">
                         <div class="project-overlay">
@@ -277,28 +283,28 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xxl-3">
+                <div class="col-md-3">
                     <div class="single-counter">
                         <i class="fa-solid fa-user"></i>
                         <h4 class="counter">87</h4>
                         <p>happy clients</p>
                     </div>
                 </div>
-                <div class="col-xxl-3">
+                <div class="col-md-3">
                     <div class="single-counter">
                         <i class="fa-solid fa-award"></i>
                         <h4 class="counter">36</h4>
                         <p>award winning</p>
                     </div>
                 </div>
-                <div class="col-xxl-3">
+                <div class="col-md-3">
                     <div class="single-counter">
                         <i class="fa-solid fa-gem"></i>
                         <h4 class="counter">246</h4>
                         <p>completed projects</p>
                     </div>
                 </div>
-                <div class="col-xxl-3">
+                <div class="col-md-3">
                     <div class="single-counter">
                         <i class="fa-solid fa-mug-hot"></i>
                         <h4 class="counter">1479</h4>
@@ -311,7 +317,7 @@
     <!-- Counter Area End Here -->
 
     <!-- Timeline Area Start Here -->
-    <section class="timeline-area pt-100 pb-100">
+    <section class="timeline-area pt-100 pb-100" id="experience">
         <div class="container">
             <div class="row">
                 <div class="col-xxl-12 text-center">
@@ -367,7 +373,7 @@
     <!-- Timeline Area End Here -->
 
     <!-- Testimonials Area Start Here -->
-    <section class="testimonials-area pt-100 pb-100">
+    <section class="testimonials-area pt-100 pb-100" id="testimonials">
         <div class="container">
             <div class="row">
                 <div class="col-xxl-12 text-center">
@@ -420,7 +426,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xxl-4">
+                <div class="col-lg-4 col-md-6 order-md-1 order-lg-0">
                     <div class="single-price">
                         <h5>basic</h5>
                         <h2>$99</h2>
@@ -434,7 +440,7 @@
                         <a href="" class="btn-box">sign up</a>
                     </div>
                 </div>
-                <div class="col-xxl-4">
+                <div class="col-lg-4 col-md-12 order-md-0 order-lg-1 mb-md-5 md-lg-0">
                     <div class="single-price active">
                         <h5>standard</h5>
                         <h2>$199</h2>
@@ -448,7 +454,7 @@
                         <a href="" class="btn-box">sign up</a>
                     </div>
                 </div>
-                <div class="col-xxl-4">
+                <div class="col-lg-4 col-md-6 order-md-2 order-lg-2">
                     <div class="single-price">
                         <h5>premium</h5>
                         <h2>$299</h2>
@@ -479,7 +485,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xxl-4">
+                <div class="col-md-4">
                     <div class="single-team">
                         <img class="img-fluid" src="assets/img/team/team1.jpg" alt="">
                         <div class="team-content">
@@ -491,7 +497,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xxl-4">
+                <div class="col-md-4">
                     <div class="single-team">
                         <img class="img-fluid" src="assets/img/team/team2.jpg" alt="">
                         <div class="team-content">
@@ -503,7 +509,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xxl-4">
+                <div class="col-md-4">
                     <div class="single-team">
                         <img class="img-fluid" src="assets/img/team/team3.jpg" alt="">
                         <div class="team-content">
@@ -521,7 +527,7 @@
     <!-- Team Area End Here -->
 
     <!-- Blog Area Start Here -->
-    <section class="blog-area pt-100 pb-100">
+    <section class="blog-area pt-100 pb-100" id="blog">
         <div class="container">
             <div class="row">
                 <div class="col-xxl-12 text-center">
@@ -532,36 +538,36 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xxl-4">
+                <div class="col-lg-4 col-md-12 mb-md-5 md-lg-0">
                     <div class="single-blog">
                         <div class="blog-img" style="background-image: url('assets/img/blog/blog1.jpg');"></div>
                         <div class="blog-meta">
-                            <a href=""><i class="fa-solid fa-user"></i> admin</a>
-                            <a href=""><i class="fa-solid fa-user"></i> 5 comments</a>
+                            <a href="" class="d-lg-block d-xl-inline"><i class="fa-solid fa-user"></i> admin</a>
+                            <a href="" class="d-lg-block d-xl-inline"><i class="fa-solid fa-user"></i> 5 comments</a>
                         </div>
                         <h4><a href="">blog title here</a></h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum, repellendus fuga dolor labore harum illum distinctio! Molestiae, voluptate odit.</p>
                         <a href="" class="btn-box">read more</a>
                     </div>
                 </div>
-                <div class="col-xxl-4">
+                <div class="col-lg-4 col-md-12 mb-md-5 md-lg-0">
                     <div class="single-blog">
                         <div class="blog-img" style="background-image: url('assets/img/blog/blog2.jpg');"></div>
                         <div class="blog-meta">
-                            <a href=""><i class="fa-solid fa-user"></i> admin</a>
-                            <a href=""><i class="fa-solid fa-user"></i> 5 comments</a>
+                            <a href="" class="d-lg-block d-xl-inline"><i class="fa-solid fa-user"></i> admin</a>
+                            <a href="" class="d-lg-block d-xl-inline"><i class="fa-solid fa-user"></i> 5 comments</a>
                         </div>
                         <h4><a href="">blog title here</a></h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum, repellendus fuga dolor labore harum illum distinctio! Molestiae, voluptate odit.</p>
                         <a href="" class="btn-box">read more</a>
                     </div>
                 </div>
-                <div class="col-xxl-4">
+                <div class="col-lg-4 col-md-12">
                     <div class="single-blog">
                         <div class="blog-img" style="background-image: url('assets/img/blog/blog3.jpg');"></div>
                         <div class="blog-meta">
-                            <a href=""><i class="fa-solid fa-user"></i> admin</a>
-                            <a href=""><i class="fa-solid fa-user"></i> 5 comments</a>
+                            <a href="" class="d-lg-block d-xl-inline"><i class="fa-solid fa-user"></i> admin</a>
+                            <a href="" class="d-lg-block d-xl-inline"><i class="fa-solid fa-user"></i> 5 comments</a>
                         </div>
                         <h4><a href="">blog title here</a></h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum, repellendus fuga dolor labore harum illum distinctio! Molestiae, voluptate odit.</p>
@@ -586,6 +592,76 @@
         </div>
     </section>
     <!-- CTA Area End Here -->
+
+    <!-- Contact Area Start Here -->
+    <section class="contact-area pt-100 pb-100" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-12 text-center">
+                    <div class="section-title">
+                        <h4>contact us</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-xxl-7 col-lg-8 mb-md-5 md-lg-0">
+                    <div class="contact-form">
+                        <h4>write me now </h4>
+                        <form>
+                            <input class="form-control mb-3" type="text" placeholder="Name">
+                            <input class="form-control mb-3"  type="text" placeholder="Subject">
+                            <input class="form-control mb-3"  type="email" placeholder="Email">
+                            <textarea class="form-control mb-3"  placeholder="Message"></textarea>
+                            <input class="form-control" type="submit" value="Send Message">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xxl-5 col-lg-4">
+                    <div class="single-contact d-flex align-items-center">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h4>address <span>New York, USA</span></h4>
+                    </div>
+                    <div class="single-contact d-flex align-items-center">
+                        <i class="fa-solid fa-phone"></i>
+                        <h4>phoner <span>+8748347934</span></h4>
+                    </div>
+                    <div class="single-contact d-flex align-items-center">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h4>email <span>info@xenon.com</span></h4>
+                    </div>
+                    <div class="single-contact d-flex align-items-center">
+                        <i class="fa-solid fa-earth-europe"></i>
+                        <h4>website <span>www.xenon.com</span></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Area End Here -->
+
+    <!-- Footer Area Start Here -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-12 text-center">
+                    <h2>xenon doe</h2>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                    <p>&copy; 2022. all rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End Here -->
+
+    <!-- Scroll to Top Button -->
+    <a href="#" id="scrolltop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
 
     <!-- Jquery JS -->
     <script src="assets/js/jquery.min.js"></script>

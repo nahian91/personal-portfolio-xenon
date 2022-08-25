@@ -1,406 +1,460 @@
+/*
+  Template Name: Xenon | Personal Portfolio Website
+  Author: Abdullah Nahian
+  Version: 1.0
+
+  Table of Contents
+  ---
+  01. Common CSS
+  02. Preloader CSS
+  03. Header CSS
+  04. Bannar CSS
+  05. About CSS
+  06. Services CSS
+  07. Projects CSS
+  08. Breadcumb CSS
+  09. Single Project CSS
+  10. Counter CSS
+  11. Timeline CSS
+  12. Testimonials CSS
+  13. Price CSS
+  14. Team CSS
+  15. Blog CSS
+  16. CTA CSS
+  17. Contact CSS
+  18 .Footer CSS
+  19. Scroll to Top CSS
+
+*/
+
+/* 01. Common CSS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
-body{
-    font-family: 'Poppins', sans-serif;
-    color: #333;
-    font-size: 16px;
-    line-height: 24px;
+
+body {
+	font-family: 'Poppins', sans-serif;
+	color: #333;
+	font-size: 16px;
+	line-height: 24px;
+}
+.pt-100 {
+	padding-top: 100px;
+}
+.pb-100 {
+	padding-bottom: 100px;
+}
+.btn-box {
+	background-color: #ff3636;
+	display: inline-block;
+	color: #fff;
+	text-decoration: navajowhite;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 12px 30px;
+	font-size: 18px;
+	transition: .3s;
+}
+.btn-box:hover {
+	background-color: #333;
+	color: #fff;
+}
+.section-title {
+	margin-bottom: 60px;
+}
+.section-title h4 {
+	text-transform: capitalize;
+	font-size: 40px;
+	font-weight: 600;
+	position: relative;
+	padding-bottom: 20px;
+}
+.section-title h4:before {
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 2px;
+	background-color: #ff3636;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.section-title h4:after {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: #ff3636;
+	border-radius: 50%;
+	left: 50%;
+	bottom: -3px;
+	transform: translateX(-50%);
 }
 
-/* Common CSS */
 
-.pt-100{
-    padding-top: 100px;
+/* 02. Preloader CSS */
+.preloader {
+	position: absolute;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
 }
-.pb-100{
-    padding-bottom: 100px;
+.preloader img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
-/* Header CSS */
+/* 03. Header CSS */
 
-
-.navbar-brand {
-    text-transform: uppercase;
-    font-weight: 700;
-    border: 1px solid #fff;
-    padding: 10px 25px;
-    font-size: 24px;
-    color: #fff;
-}
 .header {
 	padding: 5px 0;
 	position: absolute;
 	left: 0;
 	right: 0;
 	z-index: 9;
+	transition: .3s;
 }
-  .navbar-nav li a {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 600;
-    padding: 0 12px !important;
-  }
+.header.fixed {
+	position: fixed;
+	z-index: 99;
+	background-color: #fff;
+	padding: 0;
+	left: 0;
+	right: 0;
+	border-bottom: 1px solid #ddd;
+}
+.header.fixed a {
+	color: #333;
+}
+.header.fixed .navbar-brand {
+	border-color: #333;
+}
+.header.fixed .navbar-nav li a.active {
+	color: #ff3636;
+}
+.navbar-brand {
+	text-transform: uppercase;
+	font-weight: 700;
+	border: 1px solid #fff;
+	padding: 10px 25px;
+	font-size: 24px;
+	color: #fff;
+}
+.navbar-nav li a {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 600;
+	padding: 0 12px !important;
+	transition: .3s;
+}
+.navbar-nav li a:hover {
+	color: #ff3636;
+}
 
-/* Bannar CSS */
-
-
+/* 04. Bannar CSS */
 .bannar-area {
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    z-index: 2;
-    height: 100vh;
-  }
-  .bannar-area:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #333;
-    opacity: .7;
-    z-index: -11;
-  }
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	z-index: 2;
+	height: 100vh;
+}
+.bannar-area:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+	opacity: .7;
+	z-index: -11;
+}
+.bannar h1 {
+	text-transform: capitalize;
+	font-weight: 700;
+	font-size: 80px;
+}
+.bannar h5 {
+	text-transform: capitalize;
+}
+.bannar a {
+	margin-top: 15px;
+}
 
-  .bannar h1 {
-    text-transform: capitalize;
-    font-weight: 700;
-    font-size: 80px;
-  }
-  .bannar h5 {
-    text-transform: capitalize;
-  }
-  .btn-box {
-    background-color: #ff3636;
-    display: inline-block;
-    color: #fff;
-    text-decoration: navajowhite;
-    text-transform: uppercase;
-    font-weight: 600;
-    padding: 12px 30px;
-    font-size: 18px;
-    transition: .3s;
-  }
-  .bannar a {
-    margin-top: 15px;
-  }
-  .btn-box:hover {
-    background-color: #333;
-    color: #fff;
-  }
-
-/* About CSS */
-
+/* 05. About CSS */
 
 .about-content h3 {
-    color: #ff3636;
-    text-transform: capitalize;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 26px;
-  }
-  .about-content h5 {
-    text-transform: capitalize;
-    margin-bottom: 20px;
-  }
-  
+	color: #ff3636;
+	text-transform: capitalize;
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 26px;
+}
+.about-content h5 {
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
 .about-content ul {
-    width: 30%;
-    float: left;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 25px;
-  }
-  .about-content ul li {
-    text-transform: capitalize;
-  }
+	width: 30%;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 25px;
+}
+.about-content ul li {
+	text-transform: capitalize;
+}
 
-/* Services CSS */
-
+/* 06. Services CSS */
 
 .services-area {
-    background-color: #f6f6f6;
-  }
-  .section-title h4 {
-    text-transform: capitalize;
-    font-size: 40px;
-    font-weight: 600;
-    position: relative;
-    padding-bottom: 20px;
-  }
-  .section-title h4:before {
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 2px;
-    background-color: #ff3636;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .section-title h4:after {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: #ff3636;
-    border-radius: 50%;
-    left: 50%;
-    bottom: -3px;
-    transform: translateX(-50%);
-  }
-  .section-title {
-    margin-bottom: 60px;
-  }
-  .single-service {
-    text-align: center;
-    background-color: #fff;
-    padding: 30px;
-    border: 1px solid #ddd;
-    margin-bottom: 30px;
-  }
-  .single-service i {
-    background-color: #ff3636;
-    width: 60px;
-    height: 60px;
-    color: #fff;
-    font-size: 20px;
-    line-height: 60px;
-    transition: .3s;
-  }
-  .single-service h4 {
-    text-transform: capitalize;
-    margin: 20px 0 15px;
-    font-size: 26px;
-    font-weight: 500;
-  }
-  .single-service:hover i {
-    border-radius: 50%;
-  }
-
-  /* Projects CSS */
-
-  
-.single-project {
-  position: relative;
+	background-color: #f6f6f6;
 }
-.single-project:hover .project-overlay{
-  visibility: visible;
-  opacity: 1;
-  transform: scale(1);
+.single-service {
+	text-align: center;
+	background-color: #fff;
+	padding: 30px;
+	border: 1px solid #ddd;
+	margin-bottom: 30px;
+}
+.single-service i {
+	background-color: #ff3636;
+	width: 60px;
+	height: 60px;
+	color: #fff;
+	font-size: 20px;
+	line-height: 60px;
+	transition: .3s;
+}
+.single-service h4 {
+	text-transform: capitalize;
+	margin: 20px 0 15px;
+	font-size: 26px;
+	font-weight: 500;
+}
+.single-service:hover i {
+	border-radius: 50%;
+}
+
+/* 07. Projects CSS */
+
+.single-project {
+	position: relative;
+}
+.single-project:hover .project-overlay {
+	visibility: visible;
+	opacity: 1;
+	transform: scale(1);
 }
 .project-overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  visibility: hidden;
-  opacity: 0;
-  transition: .3s;
-  transform: scale(0);
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	visibility: hidden;
+	opacity: 0;
+	transition: .3s;
+	transform: scale(0);
 }
 .project-overlay:before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: #333;
-  opacity: .8;
-  z-index: -1;
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+	opacity: .8;
+	z-index: -1;
 }
 .project-content {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  transform: translate(-50%, -50%);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	transform: translate(-50%, -50%);
 }
 .project-content a {
-  color: #fff;
-  border: 1px solid #fff;
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  border-radius: 50%;
-  line-height: 40px;
-  margin: 0 5px;
-  transition: .3s;
+	color: #fff;
+	border: 1px solid #fff;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	border-radius: 50%;
+	line-height: 40px;
+	margin: 0 5px;
+	transition: .3s;
 }
-.project-content a:hover{
-  background-color: #ff3636;
-  border-color: #ff3636;
+.project-content a:hover {
+	background-color: #ff3636;
+	border-color: #ff3636;
 }
 .project-content h4 {
-  text-transform: capitalize;
-  color: #fff;
-  font-size: 24px;
-  font-weight: 600;
-  margin-top: 10px;
+	text-transform: capitalize;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 600;
+	margin-top: 10px;
 }
 .project-content h4 span {
-  display: block;
-  font-style: italic;
-  font-size: 15px;
-  font-weight: 400;
-  margin-top: 5px;
-  text-transform: lowercase;
+	display: block;
+	font-style: italic;
+	font-size: 15px;
+	font-weight: 400;
+	margin-top: 5px;
+	text-transform: lowercase;
 }
 
-/* Breadcumb CSS */
-
+/* 08. Breadcumb CSS */
 
 .breadcumb-area {
-  padding: 160px 0 80px;
-  background-size: cover;
-  background-position: top center;
-  position: relative;
-  z-index: 2;
+	padding: 160px 0 80px;
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 2;
 }
 .breadcumb-area:before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: #333;
-  left: 0;
-  top: 0;
-  opacity: .8;
-  z-index: -1;
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+	left: 0;
+	top: 0;
+	opacity: .8;
+	z-index: -1;
 }
 .breadcumb-area h2 {
-  text-transform: capitalize;
-  color: #fff;
-  font-size: 50px;
-  font-weight: 600;
+	text-transform: capitalize;
+	color: #fff;
+	font-size: 50px;
+	font-weight: 600;
 }
 
-/* Single Project CSS */
-
+/* 09. Single Project CSS */
 
 .page-title {
-  text-transform: capitalize;
-  font-weight: 600;
-  font-size: 24px;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
+	text-transform: capitalize;
+	font-weight: 600;
+	font-size: 24px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
 }
 .project-contents img {
-  margin-bottom: 25px;
+	margin-bottom: 25px;
 }
 .project-gallery {
-  margin-top: 40px;
+	margin-top: 40px;
 }
 .sidebar {
-  margin-bottom: 40px;
+	margin-bottom: 40px;
 }
 .sidebar ul li {
-  padding-left: 0;
-  font-weight: 500;
+	padding-left: 0;
+	font-weight: 500;
 }
 .sidebar iframe {
-  width: 100%;
-  height: 300px;
+	width: 100%;
+	height: 300px;
 }
 
-/* Counter CSS */
-
+/* 10. Counter CSS */
 
 .counter-area {
-  background-color: #333;
-  color: #fff;
+	background-color: #333;
+	color: #fff;
 }
 .single-counter {
-  text-align: center;
+	text-align: center;
 }
 .single-counter i {
-  background-color: #ff3636;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  font-size: 22px;
+	background-color: #ff3636;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 22px;
 }
 .single-counter h4 {
-  margin-top: 15px;
-  font-weight: 600;
-  font-size: 45px;
+	margin-top: 15px;
+	font-weight: 600;
+	font-size: 45px;
 }
 .single-counter p {
-  text-transform: capitalize;
-  font-size: 20px;
-  font-weight: 500;
+	text-transform: capitalize;
+	font-size: 20px;
+	font-weight: 500;
 }
 
-/* Timeline CSS */
-
+/* 11. Timeline CSS */
 
 .timeline-list {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 .timeline-list:after {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 100%;
-  background-color: #ff3636;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: #ff3636;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
 }
 .timeline-list li .timeline-content {
-  width: 45%;
-  border: 2px solid #ff3636;
-  text-align: right;
-  padding: 20px;
+	width: 45%;
+	border: 2px solid #ff3636;
+	text-align: right;
+	padding: 20px;
 }
 .timeline-list li .timeline-content span {
-  display: block;
-  color: #ff3636;
-  font-weight: 600;
-  font-size: 20px;
+	display: block;
+	color: #ff3636;
+	font-weight: 600;
+	font-size: 20px;
 }
 .timeline-list li .timeline-content h4 {
-  text-transform: capitalize;
-  font-size: 26px;
-  font-weight: 600;
-  margin: 10px 0;
+	text-transform: capitalize;
+	font-size: 26px;
+	font-weight: 600;
+	margin: 10px 0;
 }
 .timeline-list li {
-  clear: both;
-  display: table;
-  position: relative;
+	clear: both;
+	display: table;
+	position: relative;
 }
 .timeline-list li:nth-child(even) .timeline-content {
-  float: right;
-  text-align: left;
+	float: right;
+	text-align: left;
 }
 .timeline-list li:after {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  background-color: #ff3636;
-  border-radius: 50%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-color: #ff3636;
+	border-radius: 50%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
-/* Testimonials CSS */
-
+/* 12. Testimonials CSS */
 
 .testimonials-area {
-  background-color: #333;
-  color: #fff;
+	background-color: #333;
+	color: #fff;
 }
 .single-testimonial {
-  text-align: center;
+	text-align: center;
 }
 .single-testimonial img {
 	border-radius: 50%;
@@ -408,196 +462,279 @@ body{
 	margin: 0 auto;
 }
 .single-testimonial p {
-  margin-top: 20px;
-  max-width: 800px;
-  margin: 20px auto;
+	margin-top: 20px;
+	max-width: 800px;
+	margin: 20px auto;
 }
 .client-info h4 {
-  text-transform: capitalize;
-  font-weight: 600;
+	text-transform: capitalize;
+	font-weight: 600;
 }
 .client-info h4 span {
-  display: block;
-  font-size: 16px;
-  font-weight: 400;
-  margin-top: 5px;
+	display: block;
+	font-size: 16px;
+	font-weight: 400;
+	margin-top: 5px;
 }
-
 .testimonials .owl-dots button {
-  width: 15px;
-  height: 15px;
-  background-color: #fff !important;
-  display: inline-block;
-  margin: 0 5px;
-  border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	background-color: #fff !important;
+	display: inline-block;
+	margin: 0 5px;
+	border-radius: 50%;
 }
 .testimonials .owl-dots {
-  text-align: center;
-  margin-top: 15px;
+	text-align: center;
+	margin-top: 15px;
 }
 .testimonials .owl-dots button.active {
-  background-color: #ff3636 !important;
+	background-color: #ff3636 !important;
 }
 
-/* Price CSS */
-
+/* 13. Price CSS */
 
 .price-area {
-  background-color: #f4f4f4;
+	background-color: #f4f4f4;
 }
 .single-price {
-  text-align: center;
-  background-color: #fff;
-  padding: 20px 30px;
+	text-align: center;
+	background-color: #fff;
+	padding: 20px 30px;
 }
 .single-price h5 {
-  text-transform: uppercase;
-  font-size: 24px;
-  font-weight: 600;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 600;
 }
 .single-price h2 {
-  margin: 20px 0;
-  background-color: #f4f4f4;
-  padding: 10px;
-  font-size: 40px;
-  font-weight: 700;
+	margin: 20px 0;
+	background-color: #f4f4f4;
+	padding: 10px;
+	font-size: 40px;
+	font-weight: 700;
 }
 .single-price ul {
-  list-style: none;
-  padding: 0;
+	list-style: none;
+	padding: 0;
 }
 .single-price ul li {
-  border-bottom: 1px dashed #ddd;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  text-transform: capitalize;
+	border-bottom: 1px dashed #ddd;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	text-transform: capitalize;
 }
 .single-price ul li:last-child {
-  border-bottom: 0;
+	border-bottom: 0;
 }
 .single-price.active {
-  border: 3px solid #ff3636;
+	border: 3px solid #ff3636;
 }
 .single-price.active h2 {
-  background-color: #ff3636;
-  color: #fff;
+	background-color: #ff3636;
+	color: #fff;
 }
 
-/* Team CSS */
+/* 14. Team CSS */
 
-
-.single-team img {
-  width: 100%;
-}
 .single-team {
-  position: relative;
-  overflow: hidden;
+	position: relative;
+	overflow: hidden;
+}
+.single-team img {
+	width: 100%;
 }
 .team-content {
-  text-align: center;
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  position: absolute;
-  left: 0;
-  bottom: -130px;
-  width: 100%;
-  transition: .3s;
+	text-align: center;
+	background-color: #333;
+	color: #fff;
+	padding: 20px 0;
+	position: absolute;
+	left: 0;
+	bottom: -130px;
+	width: 100%;
+	transition: .3s;
 }
 .team-content h4 {
-  text-transform: capitalize;
-  font-size: 26px;
-  font-weight: 600;
+	text-transform: capitalize;
+	font-size: 26px;
+	font-weight: 600;
 }
 .team-content h4 span {
-  display: block;
-  font-size: 16px;
-  font-weight: 400;
-  margin-top: 5px;
+	display: block;
+	font-size: 16px;
+	font-weight: 400;
+	margin-top: 5px;
 }
 .team-content a {
-  color: #fff;
-  margin: 0 5px;
-  transition: .3s;
+	color: #fff;
+	margin: 0 5px;
+	transition: .3s;
 }
 .team-content a:hover {
-  color: #ff3636;
+	color: #ff3636;
 }
 .single-team:hover .team-content {
-  bottom: 0;
+	bottom: 0;
 }
 
-/* Blog CSS */
+/* 15. Blog CSS */
 
 .blog-area {
-  background-color: #f4f4f4;
+	background-color: #f4f4f4;
 }
 .single-blog {
-  background-color: #fff;
-  padding: 20px;
-  border: 1px solid #ddd;
+	background-color: #fff;
+	padding: 20px;
+	border: 1px solid #ddd;
 }
 .blog-img {
-  width: 100%;
-  height: 300px;
-  background-size: cover;
-  background-position: center;
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
 }
 .blog-meta {
-  text-align: center;
-  background-color: #fff;
-  padding: 10px 0;
-  margin: -25px 25px 0;
-  border: 1px solid #ddd;
+	text-align: center;
+	background-color: #fff;
+	padding: 10px 0;
+	margin: -25px 25px 0;
+	border: 1px solid #ddd;
 }
 .blog-meta a {
-  text-decoration: none;
-  color: #333;
-  margin: 0 5px;
-  transition: .3s;
+	text-decoration: none;
+	color: #333;
+	margin: 0 5px;
+	transition: .3s;
 }
 .blog-meta a:hover {
-  color: #ff3636;
+	color: #ff3636;
 }
 .single-blog h4 a {
-  text-transform: capitalize;
-  text-decoration: navajowhite;
-  color: #333;
-  margin: 15px 0;
-  display: block;
-  transition: .3s;
+	text-transform: capitalize;
+	text-decoration: navajowhite;
+	color: #333;
+	margin: 15px 0;
+	display: block;
+	transition: .3s;
 }
 .single-blog h4 a:hover {
-  color: #ff3636;
+	color: #ff3636;
 }
 
-/* CTA CSS */
-
+/* 16. CTA CSS */
 
 .cta-area {
-  background-size: cover;
-  background-position: center;
-  padding: 80px 0;
-  position: relative;
-  z-index: 2;
-  color: #fff;
+	background-size: cover;
+	background-position: center;
+	padding: 80px 0;
+	position: relative;
+	z-index: 2;
+	color: #fff;
 }
 .cta-area:before {
-  position: absolute;
-  content: "";
-  background-color: #333;
-  opacity: .8;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
+	position: absolute;
+	content: "";
+	background-color: #333;
+	opacity: .8;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
 }
 .cta-area h2 {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 40px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 40px;
 }
 .cta-area p {
-  margin: 20px 0;
+	margin: 20px 0;
+}
+
+/* 17. Contact CSS */
+
+.contact-form input[type="submit"] {
+	background-color: #ff3636;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.single-contact i {
+	background-color: #ff3636;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.single-contact h4 {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 22px;
+}
+.single-contact h4 span {
+	display: block;
+	font-size: 16px;
+	text-transform: capitalize;
+	margin-top: 5px;
+}
+.single-contact {
+	margin-bottom: 20px;
+}
+.contact-form h4 {
+	text-transform: capitalize;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+/* 18 .Footer CSS */
+
+
+.footer-area {
+	background-color: #333;
+	color: #fff;
+	padding: 50px 0;
+}
+.footer-area h2 {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 36px;
+	letter-spacing: 3px;
+	margin-bottom: 15px;
+}
+.footer-area a {
+	color: #fff;
+	margin: 0 5px;
+	transition: .3s;
+}
+.footer-area a:hover {
+	color: #ff3636;
+}
+.footer-area p {
+	border-top: 1px solid #ddd;
+	margin-top: 30px;
+	padding-top: 30px;
+	text-transform: capitalize;
+}
+
+/* 19. Scroll to Top CSS */
+
+#scrolltop {
+	position: fixed;
+	background-color: #ff3636;
+	width: 60px;
+	height: 60px;
+	right: 20px;
+	bottom: 20px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 60px;
+	z-index: 99;
+}
+#scrolltop i {
+	color: #fff;
+	font-size: 22px;
 }
